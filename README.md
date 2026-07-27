@@ -4,6 +4,12 @@
 Android Helper and iOS app. Its `.sig` sidecar is an Ed25519 signature over the
 unchanged JSON bytes.
 
+The iOS app loads this signed catalog first, then its last verified cache. The
+Helper keeps that remote catalog separately from the APK asset and falls back
+to the bundled document when no valid remote catalog is available. Catalog
+`revision` is monotonic so a newer signed publication can safely replace or
+revoke older profile data without an App Store release.
+
 Publish only with:
 
 ```sh
@@ -15,3 +21,6 @@ python3 tools/publish_offset_profiles.py \
 
 Never commit the private key. The app rejects a changed JSON document unless
 its signature verifies against the pinned public key.
+
+See [NEW_VERSION_CHECKLIST.md](NEW_VERSION_CHECKLIST.md) before publishing any
+new Speediance profile.
