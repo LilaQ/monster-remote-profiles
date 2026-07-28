@@ -73,6 +73,11 @@ matrix.
 
 - [ ] Authentication token capture and correct regional API host.
 - [ ] Free Lift/Course exercise JSON and upcoming exercise JSON.
+- [ ] Verify both mutually exclusive
+      `COURSE_VOLUME_REP_ALT_HOOK_OFFSET` /
+      `COURSE_VOLUME_REP_HOOK_OFFSET` call-sites. Course Volume Race must
+      count accepted reps for both Side/Counter exercise paths and keep the
+      correct set.
 - [ ] Recent, 2-month and 6-month history; immutable responses use cache.
 - [ ] Correct kg/lb values, limits and labels from the GM preference.
 - [ ] Correct locale date formatting and same-day set numbering only.
