@@ -4,9 +4,10 @@
 Android Helper and iOS app. Its `.sig` sidecar is an Ed25519 signature over the
 unchanged JSON bytes.
 
-The Course volume widget also relies on `COURSE_VOLUME_REP_HOOK_OFFSET`.
-It must point to the instruction directly after the accepted-repetition
-callback in `CounterManagerLogic::_onCount`, never to the set-index setter.
+The Course volume widget relies on `COURSE_VOLUME_REP_ALT_HOOK_OFFSET` and
+`COURSE_VOLUME_REP_HOOK_OFFSET`. They must point to the instructions directly
+after both mutually exclusive accepted-repetition callbacks in
+`CounterManagerLogic::_onCount`, never to the set-index setter.
 
 The iOS app loads this signed catalog first, then its last verified cache. The
 Helper keeps that remote catalog separately from the APK asset and falls back
