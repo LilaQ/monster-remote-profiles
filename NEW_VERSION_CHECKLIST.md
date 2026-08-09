@@ -23,7 +23,9 @@ matrix.
 - [ ] Run `finalize_watch_requests_profile.py`.
 - [ ] Confirm: no unresolved/unknown fields, exact APK Build-ID, every code
       offset AArch64-aligned and inside the executable segment.
-- [ ] Confirm every profile has the identical complete field set.
+- [ ] Confirm every profile has the complete required field set. Optional
+      feature groups may be absent only as a documented all-or-none group;
+      never publish a partially populated optional group.
 - [ ] Confirm the catalog `revision` increased when profile data changed.
 
 ## 3. Build and install a private test build
@@ -75,9 +77,15 @@ matrix.
 - [ ] Free Lift/Course exercise JSON and upcoming exercise JSON.
 - [ ] Verify both mutually exclusive
       `COURSE_VOLUME_REP_ALT_HOOK_OFFSET` /
-      `COURSE_VOLUME_REP_HOOK_OFFSET` call-sites. Course Volume Race must
+      `COURSE_VOLUME_REP_HOOK_OFFSET` call-sites. Course Movement Volume must
       count accepted reps for both Side/Counter exercise paths and keep the
       correct set.
+- [ ] Revalidate the optional native Course widget suppression sites for Rep
+      Counter, Movement Power and Heart Rate, including the exact original
+      AArch64 store instructions and Faraday's own zero-size `SizedBox`
+      object-pool offset/CID/dimensions. These values are build-specific. If
+      any evidence is missing, omit/zero all five `NATIVE_COURSE_*` fields and
+      leave the native UI untouched.
 - [ ] Recent, 2-month and 6-month history; immutable responses use cache.
 - [ ] Correct kg/lb values, limits and labels from the GM preference.
 - [ ] Correct locale date formatting and same-day set numbering only.
