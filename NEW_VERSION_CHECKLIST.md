@@ -26,6 +26,8 @@ matrix.
 - [ ] Confirm every profile has the complete required field set. Optional
       feature groups may be absent only as a documented all-or-none group;
       never publish a partially populated optional group.
+- [ ] Run the Helper's `tools/test_publish_offset_profiles.py`; confirm omitted
+      optional groups and unknown future fields remain compatible.
 - [ ] Confirm the catalog `revision` increased when profile data changed.
 
 ## 3. Build and install a private test build
