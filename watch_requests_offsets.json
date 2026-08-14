@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": 13,
+  "revision": 14,
   "profiles": [
     {
       "version": "3.06.01",
@@ -846,7 +846,7 @@
         "REST_FREE_BUILD_HOOK_OFFSET": "0x2273864",
         "REST_FREE_DISPOSE_HOOK_OFFSET": "0x24a4814",
         "REST_PAUSE_INIT_HOOK_OFFSET": "0x2469c30",
-        "REST_PAUSE_DISPOSE_HOOK_OFFSET": "0x2f8fb5c",
+        "REST_PAUSE_DISPOSE_HOOK_OFFSET": "0x24a46e0",
         "REST_PAUSE_BUILD_HOOK_OFFSET": "0x2247c40",
         "REST_PAUSE_EXPAND_INIT_HOOK_OFFSET": "0x23fdbe4",
         "REST_PAUSE_EXPAND_HOOK_OFFSET": "0x1b83230",
