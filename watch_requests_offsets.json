@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": 12,
+  "revision": 13,
   "profiles": [
     {
       "version": "3.06.01",
@@ -680,6 +680,9 @@
         "COMMAND_CLOSURE_ONE_ARG_DESCRIPTOR_PP_OFFSET": "0x238",
         "COURSE_END_SET_TIMER_HOOK_OFFSET": "0x26cc6a0",
         "COURSE_END_SET_COMPLETION_HOOK_OFFSET": "0x26cc768",
+        "COURSE_END_SET_NATIVE_CALLBACK_OFFSET": "0x26cd1dc",
+        "COURSE_UI_STATE_CID": "7362",
+        "COURSE_UI_STATE_INSPECTOR_FIELD_OFFSET": "0x57",
         "COURSE_TWO_SECONDS_INSPECTOR_CID": "4528",
         "COUNT_VALUE_CID": "4530",
         "COUNT_VALUE_LENGTH_FIELD_OFFSET": "0xb",
